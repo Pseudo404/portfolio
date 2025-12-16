@@ -1,0 +1,50 @@
+header{
+    position: fixed;
+    background-color: #050505;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 1px var(--gray);
+    top: 0;
+    padding: 2% 0;
+    z-index: 10;
+}
+header>#name-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+header>#name-div>h3{
+    color: white;
+    font-size: 1.5rem;
+    margin: 4% 0;
+    font-weight: 700;
+}
+header>#name-div>p{
+    color: var(--light-blue);
+    font-size: 2rem;
+    margin: -0.5% -0.5% 0 -0.5%;
+}
+header>#list{
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+
+    align-items: center;
+    font-weight: 550;
+    font-family: 'Outfit';
+}
+header>#list>li>#contacter{
+    border-radius: 25px;
+    background-color: var(--purple);
+    padding: 12%;
+    display: block;
+    width: 150%;
+}
+header>#list>li{
+    margin: 0 4%;
+    text-align: center;
+}

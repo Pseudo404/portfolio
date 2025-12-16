@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="presentation.css">
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="projets.css">
+    <link rel="stylesheet" href="contact.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Outfit:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Tom Cizeau | Développeur Full-Stack</title>
+</head>
+<body>
+    <header id="accueil">
+        <div id="name-div">
+            <h3>CIZEAU</h3><p>.</p><h3>dev</h3>
+        </div>
+        <div id="list">
+            <li><a href="#presentation">Accueil</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projet-h2">Projets</a></li>
+            <li><a id="contacter" href="#contact-h2">Me Contacter</a></li>
+        </div>
+    </header>
+    <canvas id="bg-canvas"></canvas>
+    <div id="presentation">
+            <h4>Étudiant Dev Full-Stack chez CODA_</h4>
+            <div id="nom-prenom"><h1>CIZEAU</h1><h1 id="tom">Tom</h1></div>
+            <div><h3 id="type">Explorateur tech</h3><h3>|</h3></div>
+            <div id="link">
+                <a href="">Voir mes projets <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i></a>
+                <a target="_blank" href="https://github.com/Pseudo404"><i class="fab fa-github"></i>GitHub</a>
+            </div>
+        </div>
+        <div id="arrow"></div>
+    <section id="skills">
+        <h2>Skills <i class="fas fa-terminal"></i></h2>
+
+        <div class="skills-marquee">
+            <div class="track-wrapper" id="track1-wrapper">
+                <div class="skills-track">
+                    <span class="skill-box"><i class="fab fa-html5" style="color: #E34F26;"></i> HTML5</span>
+                    <span class="skill-box"><i class="fab fa-css3-alt" style="color: #3b82f6;"></i> CSS3</span>
+                    <span class="skill-box"><i class="fab fa-js" style="color: #F7DF1E;"></i> JavaScript</span>
+                    <span class="skill-box"><i class="fab fa-php" style="color: #818cf8;"></i> PHP</span>
+                    <span class="skill-box"><i class="fas fa-database" style="color: gray;"></i> SQL</span>
+                    <span class="skill-box"><i class="fab fa-python" style="color: #3776AB;"></i> Python</span>
+                    <span class="skill-box"><img src="C_Programming_Language.svg" alt="C" style="width: 16px; height:auto;"> C</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-marquee">
+            <div class="track-wrapper" id="track2-wrapper">
+                <div class="skills-track">
+                    <span class="skill-box"><img src="Visual_Studio_Code_1.35_icon.svg" alt="VS Code" style=" width:16px; height:auto;"> Visual Studio Code</span>
+                    <span class="skill-box"><img src="Android_Studio_Logo_(2023).svg" alt="Android Studio" style="width:16px; height:auto;"> Android Studio</span>
+                    <span class="skill-box"><img src="PyCharm_Icon.svg" alt="PyCharm" style="width:16px; height:auto;"> PyCharm</span>
+                    <span class="skill-box"><i class="fab fa-git-alt" style="color: #F05032;"></i> Git</span>
+                    <span class="skill-box"><i class="fab fa-github"></i> GitHub</span>
+                    <span class="skill-box"><img src="Docker_(container_engine)_logo.svg" alt="Docker" style="width:30px; height:auto;"> Docker</span>
+                    <span class="skill-box"><img src="Xampp_logo.svg" alt="XAMPP" style="width:16px; height:auto;"> XAMPP</span>
+                    <span class="skill-box"><i class="fab fa-linux" style="color: #fef08a;"></i> Linux</span>
+                    <span class="skill-box"><img src="Figma-logo.svg" alt="Figma" style="width:16px; height:16px;"> Figma</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projets">
+        <h2 id="projet-h2">Projets <i class="fas fa-code" style="color: var(--light-blue);"></i></h2>
+        <div class="projet">
+
+            <div class="projet-box">
+                <div><img src="target.png" alt="target.py"></div>
+                <h3>Projet Target</h3>
+                <p>Mon 1re projet 2022. Un jeux en Python pour tester ça viser.</p>
+                <a href="https://github.com/Pseudo404/target">Voir le projet</a>
+            </div>
+            
+            <div class="projet-box">
+                <div><img src="tic-tac-toe.png" alt="tic-tac-toe.py"></div>
+                <h3>Projet Tic-Tac-Toe</h3>
+                <p>Mon 2e projet 2022. Reproduction du jeu Tic-Tac-Toe en Python. Pour s'entraîner.</p>
+                <a href="https://github.com/Pseudo404/tic-tac-toe">Voir le projet</a>
+            </div>
+
+            <div class="projet-box">
+                <div><img src="pong.png" alt="pong.py"></div>
+                <h3>Projet Pong</h3>
+                <p>Mon 3e projet 2023. Reproduction du jeu Pong en Python. Pour s'entraîner.</p>
+                <a href="https://github.com/Pseudo404/pong">Voir le projet</a>
+            </div>
+
+            <div class="projet-box">
+                <div><img src="site-vitrine.png" alt="site-café"></div>
+                <h3>Site d'un Café</h3>
+                <p>Site vitrine d'un café. 2025</p>
+                <a href="https://github.com/Pseudo404/school/tree/main/coda-css/site-vitrine">Voir le projet</a>
+            </div>
+
+            <div class="projet-box">
+                <div><img src="theleague.png" alt="theleague.php"></div>
+                <h3>Site The League</h3>
+                <p>Site utilisant une Base de Donnée pour afficher les résultats des matchs les performances des joueurs et de leurs équipes. 2025</p>
+                <a href="https://github.com/Pseudo404/school/tree/main/coda-bph/coda-bph-j11/php">Voir le projet</a>
+            </div>
+
+            <div class="projet-box">
+                <div><img src="fairCount.png" alt="fairCount.php"></div>
+                <h3>Site FairCount</h3>
+                <p>Site utilisant une Base de Donnée avec un system de login crée un compte et se connecter, rembourser ces ami(e)s et crée des dépenses. 2025</p>
+                <a href="https://github.com/Pseudo404/school/tree/main/coda-bph/coda-bph-j15/projet">Voir le projet</a>
+            </div>
+
+        </div>
+    </section>
+    <section id="contact">
+        <h2 id="contact-h2">Contactez-moi <i class="fa-solid fa-address-book" style="color: var(--light-blue);"></i></h2>
+        <form id="contact-form" action="" method="post">
+            <div>
+                <div>
+                    <label for="name">Nom :</label>
+                    <input type="text" placeholder="Votre nom" id="name" name="name" required> 
+                </div>
+                <div>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" placeholder="Votre prénom" id="prenom" name="prenom" required>
+                </div>
+            </div>
+            <div id="email-div">
+                <label for="email">Email :</label>
+                <input type="email" placeholder="exemple@domaine.com" id="email" name="email" required>
+            </div>
+
+            <div id="message-div">
+                <label for="message">Message :</label>
+                <textarea placeholder="Bonjour..." id="message" name="message" rows="10" required></textarea>
+            </div>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2025 Tom Cizeau. Fait avec <i class="fas fa-heart" style="color: red;"></i></p>
+    </footer>
+</body>
+</html>

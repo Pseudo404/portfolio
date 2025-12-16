@@ -1,0 +1,38 @@
+.skills-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin-top: 2%;
+}
+
+.track-wrapper {
+    display: block; 
+    overflow: hidden;
+}
+
+.skills-track {
+    display: flex; 
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    will-change: transform;
+}
+
+.skill-box {
+    display: inline-block;
+    padding: 14px 26px;
+    margin: 0 20px;
+    background: rgba(255,255,255,0.09);
+    border-radius: 12px;
+    font-size: 1.1rem;
+    backdrop-filter: blur(4px);
+}
+
+#skills{
+    padding: 8% 0;
+}
+#skills>h2{
+    margin-top: 0;
+    margin-bottom: 5%;
+}

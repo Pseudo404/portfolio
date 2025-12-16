@@ -1,0 +1,101 @@
+#contact{
+    padding: 2%;
+    margin-bottom: 3%;
+    background-color: transparent;
+}
+#contact>h2{
+    margin: 0 0 1em 0;
+    padding: 10% 0;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+}
+#contact>form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact>form>div{
+    display: flex;
+    width: 50%;
+}
+#contact>form>div>div{
+    display: flex;
+    flex-direction: column;
+    margin: 2% 2%;
+    width: 100%;
+}
+#contact>form>div>div>input,
+#contact>form>div>div>textarea,
+#contact>form>#email-div>#email{
+    margin-top: 0.5em;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    background-color: transparent;
+}
+#contact>form>#email-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+#contact>form>#email-div>#email{
+    width: 96%;
+    margin: 1% 2% 0% 2%;
+    background-color: transparent;
+    font-size: 1rem;
+    color: white;
+}
+#contact>form>#email-div>label{
+    width: 96%;
+}
+#contact>form>#message-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+#contact>form>#message-div>#message{
+    width: 96%;
+}
+#contact>form>#message-div>label{
+    width: 96%;
+    margin-top: 2%; margin-bottom: 1%;
+}
+#contact>form>#message-div>textarea{
+    width: 96%;
+    color: white;
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+#message{
+    border: none;
+    box-shadow: none;
+}
+
+#name:focus{
+    filter: drop-shadow(5px 5px 2px var(--light-blue));
+}
+#prenom:focus{
+    filter: drop-shadow(5px 5px 2px var(--light-blue));
+}
+#email:focus{
+    filter: drop-shadow(5px 5px 2px var(--light-blue));
+}
+#message:focus{
+    filter: drop-shadow(5px 5px 2px var(--light-blue));
+}
+
+#contact>form>button{
+    padding: 0.5em 1em;
+    margin: 2% 0;
+    border: 2px solid var(--purple);
+    border-radius: 4px;
+    background-color: var(--purple);
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+}
