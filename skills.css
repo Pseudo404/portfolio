@@ -1,3 +1,19 @@
+#skills{
+    position: relative;
+    margin-top: 8%;
+    width: 100%;
+    background-color: #ffffff08;
+    border-top: 1px solid #ffffff04; border-bottom: 1px solid #ffffff04;
+}
+#skills>h2{
+    margin: 5% 0;
+    font-size: clamp(0.6rem, 2vw, 1.8rem);
+    text-align: center;
+}
+#skills>h2>i{
+    color: var(--light-blue);
+}
+
 .skills-marquee {
     overflow: hidden;
     white-space: nowrap;
@@ -21,11 +37,11 @@
 
 .skill-box {
     display: inline-block;
-    padding: 14px 26px;
+    padding: 1.5% 2%;
     margin: 0 20px;
     background: rgba(255,255,255,0.09);
     border-radius: 12px;
-    font-size: 1.1rem;
+    font-size: clamp(0.4rem, 2vw, 1.1rem);
     backdrop-filter: blur(4px);
 }
 

@@ -3,12 +3,15 @@ header{
     background-color: #050505;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     border-bottom: solid 1px var(--gray);
     top: 0;
     padding: 2% 0;
     z-index: 10;
+}
+header>div{
+    margin: 0 4%;
 }
 header>#name-div{
     display: flex;
@@ -19,7 +22,7 @@ header>#name-div{
 }
 header>#name-div>h3{
     color: white;
-    font-size: 1.5rem;
+    font-size: clamp(0.8rem, 3vw, 1.5rem);
     margin: 4% 0;
     font-weight: 700;
 }
@@ -32,19 +35,45 @@ header>#list{
     list-style: none;
     display: flex;
     flex-wrap: nowrap;
-
+    width: 40%;
     align-items: center;
     font-weight: 550;
     font-family: 'Outfit';
 }
+header>#list>li>a{
+    font-size: clamp(0.2rem, 4vw, 1rem);
+}
+header>#list>li:last-child{
+    margin: 0;
+    width: 30rem;
+}
 header>#list>li>#contacter{
     border-radius: 25px;
     background-color: var(--purple);
-    padding: 12%;
+    padding: 3% 1%;
     display: block;
-    width: 150%;
+    width: 100%;
 }
 header>#list>li{
     margin: 0 4%;
+    width: 50%;
     text-align: center;
+}
+
+@media screen and (max-width: 982px) {
+    header{
+        flex-direction: column;
+        padding: 4% 0;
+    }
+    header>#list{
+        margin-top: 4%;
+        width: 100%;
+        justify-content: space-between;
+    }
+    header>#list>li {
+        margin: 0 0%;
+    }
+    header>#list>li>#contacter {
+    width: 75%;
+    }
 }
