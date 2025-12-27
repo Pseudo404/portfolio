@@ -111,3 +111,37 @@ header>#list>li{
         margin: 0 1%;
     }
 }
+
+@media screen and (max-width: 448px) {
+    header>#list{
+        justify-content: center;
+    }
+    header>#list>li{
+        margin: 0 10%;
+        width: 5rem;
+    }
+    header>#list>li:last-child{
+        margin: 0 5%;
+        width: 8rem;
+    }
+    header>#list>li>#contacter{
+        padding: 5%;
+    }
+}
+
+@media screen and (max-width: 326px) {
+    header>#list{
+        flex-direction: column;
+    }
+    header>#list>li{
+        margin: 2% 0;
+        width: auto;
+    }
+    header>#list>li:last-child{
+        margin: 2% 0;
+        width: 8rem;
+    }
+    header>#list>li>#contacter{
+        padding: 0;
+    }
+}
