@@ -7,7 +7,7 @@
 }
 #skills>h2{
     margin: 5% 0;
-    font-size: clamp(0.6rem, 2vw, 1.8rem);
+    font-size: clamp(1rem, 2vw, 1.8rem);
     text-align: center;
 }
 #skills>h2>i{
@@ -41,7 +41,7 @@
     margin: 0 20px;
     background: rgba(255,255,255,0.09);
     border-radius: 12px;
-    font-size: clamp(0.4rem, 2vw, 1.1rem);
+    font-size: clamp(0.8rem, 2vw, 1.1rem);
     backdrop-filter: blur(4px);
 }
 

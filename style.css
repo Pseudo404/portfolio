@@ -42,3 +42,7 @@ footer{
 footer>p{
     margin: 2%;
 }
+
+html, body {
+    overflow-x: hidden;
+}
