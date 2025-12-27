@@ -34,18 +34,20 @@ header>#name-div>p{
 header>#list{
     list-style: none;
     display: flex;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    /* justify-content: center; */
+    flex-wrap: wrap;
     width: 40%;
     align-items: center;
     font-weight: 550;
     font-family: 'Outfit';
 }
 header>#list>li>a{
-    font-size: clamp(0.2rem, 4vw, 1rem);
+    font-size: clamp(1rem, 4vw, 1rem);
 }
 header>#list>li:last-child{
     margin: 0;
-    width: 30rem;
+    width: 10rem;
 }
 header>#list>li>#contacter{
     border-radius: 25px;
@@ -55,9 +57,13 @@ header>#list>li>#contacter{
     width: 100%;
 }
 header>#list>li{
-    margin: 0 4%;
-    width: 50%;
+    /* margin: 0 4%; */
+    justify-content: space-around;
+    width: 20%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 
 @media screen and (max-width: 982px) {
@@ -75,5 +81,17 @@ header>#list>li{
     }
     header>#list>li>#contacter {
     width: 75%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    header>#list>li{
+        margin: 2% 4%;
+    }
+    header>#list>li{
+        width: 28%;
+    }
+    header>#list{
+        justify-content: space-evenly;
     }
 }
