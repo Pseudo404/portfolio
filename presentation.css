@@ -53,7 +53,7 @@
     justify-content: center;
     margin-top: 2%;
 }
-#presentation>div>a{
+#presentation>#link>a{
     margin: 0 1%;
     display: block;
     text-align: center;
@@ -64,24 +64,25 @@
     border: solid 1px #282828;
     /* width: max(15%, calc(30% - 1vw)); */
     width: 15%;
-    font-size: clamp(0.6rem, 1.5vw, 1rem);
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
     font-weight: 600;
+    margin: 0;
 }
-#presentation>div>a:first-child i{
+#presentation>#link>a:first-child i{
     transition: all 0.5s ease;
 }
-#presentation>div>a:last-child{
+#presentation>#link>a:last-child{
     color: white;
     background-color: var(--github);
     width: 8%;
 }
-#presentation>div>a:last-child:hover{
+#presentation>#link>a:last-child:hover{
     background-color: var(--github-hover);
 }
-#presentation>div>a:last-child>i{
+#presentation>#link>a:last-child>i{
     margin-right: 10%;
 }
-#presentation>div>a:first-child:hover i{
+#presentation>#link>a:first-child:hover i{
     margin-left: 5%;
 }
 
@@ -100,16 +101,20 @@
         align-items: center;
         justify-content: center;
     }
-    #presentation>#link>a
+    #presentation>#link>a, #presentation>#link>a:last-child
     {
         width: 50%;
-    }
-    
+    }    
 }
 @media screen and (max-width: 982px) {
     #presentation
     {
-        margin-top: 12%;
+        margin-top: 20%;
+    }
+    #presentation>#link>a, #presentation>#link>a:last-child
+    {
+        width: 50%;
+        margin: 2% 0;
     }
 }
 
@@ -129,9 +134,20 @@
 
 } */
 
+@media screen and (max-width: 510px) {
+    #presentation>#link>a
+    {
+        padding: 3% 0;
+        font-size: 0.8rem;
+    }
+}
 @media screen and (max-width: 326px) {
     #presentation
     {
         margin-top: 25%;
+    }
+    #presentation>#link>a, #presentation>#link>a:last-child
+    {
+        width: 100%;
     }
 }
