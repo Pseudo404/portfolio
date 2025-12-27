@@ -93,6 +93,9 @@ header>#list>li{
     header>#list>li>#contacter {
     width: 75%;
     } */
+    header>#name-div>p {
+        margin: -2.5% -0.5% 0 -0.5%;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -101,6 +104,14 @@ header>#list>li{
     }
     header>#list>li:last-child{
         margin: 0 2%;
+    }
+    header>#name-div>p {
+        margin: -4.5% -0.5% 0 -0.5%;
+    }
+}
+@media screen and (max-width: 560px){
+    header>#name-div>p {
+        margin: -4.5% -0.5% 0 -0.5%;
     }
 }
 @media screen and (max-width: 460px) {
@@ -126,6 +137,9 @@ header>#list>li{
     }
     header>#list>li>#contacter{
         padding: 5%;
+    }
+    header>#name-div>p {
+        margin: -13.5% -0.5% 0 -0.5%;
     }
 }
 
