@@ -84,7 +84,7 @@ header>#list>li{
     }
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 800px) {
     header>#list>li{
         margin: 2% 4%;
     }
