@@ -6,7 +6,7 @@
 #contact>h2{
     margin: 0 0 1em 0;
     padding: 10% 0;
-    font-size: clamp(0.6rem, 2vw, 1.8rem);
+    font-size: clamp(1rem, 2vw, 1.8rem);
     text-align: center;
     color: white;
 }
@@ -15,6 +15,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 #contact>form>div{
     display: flex;
@@ -88,8 +89,12 @@
 #message:focus{
     filter: drop-shadow(5px 5px 2px var(--light-blue));
 }
-
-#contact>form>button{
+#contact>form>#div-button{
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+#contact>form>#div-button>button{
     padding: 0.5em 1em;
     margin: 2% 0;
     border: 2px solid var(--purple);
@@ -98,4 +103,13 @@
     color: white;
     cursor: pointer;
     background-color: transparent;
+}
+
+@media screen and (max-width: 470px) {
+    #contact>form{
+        align-items: start;
+    }
+    #contact>form>#message-div, #contact>form>#message-div>textarea{
+        width: 100%;
+    }
 }

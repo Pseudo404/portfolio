@@ -16,7 +16,7 @@
     font-family: 'Outfit'; font-weight: 400;
     color: rgba(165, 180, 252, 0.9);
     border-radius: 25px;
-    font-size: clamp(0.2rem, 1.5vw, 1rem);
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
 }
 #presentation>div{
     display: flex;
@@ -36,7 +36,7 @@
 }
 #presentation>div>h3{
     margin: 4vh 0;
-    font-size: clamp(0.6rem, 1.5vw, 1.5rem);
+    font-size: clamp(0.8rem, 1.5vw, 1.5rem);
     font-weight: 400;
     font-family: 'Fira Code';
     color: rgba(129, 140, 248, 0.8);
